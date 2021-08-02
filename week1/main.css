@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  color: #000;
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  background: blueviolet;
+}
+
+.resume {
+  text-align: left;
+  padding: 5px 10px;
+  background: lightcoral;
+}
+
+.foto-name {
+  display: flex;
+  padding: 10px;
+  background: lightgreen;
+}
+
+.foto {
+  margin-left: 30px;
+  height: 200px;
+  width: 180px;
+  border: 3px solid red;
+  border-radius: 500px;
+}
+
+.name {
+  margin: 50px 0px 50px 100px;
+  padding: 10px 20px;
+  font-size: 4rem;
+}
+
+.contact {
+  box-sizing: border-box;
+  height: 100vmax;
+  float: left;
+  width: 350px;
+  padding: 20px;
+  background: moccasin;
+}
+
+a:hover {
+  color: green;
+  transition: 0.4s;
+}
+
+.content {
+  box-sizing: border-box;
+  height: 100vmax;
+  float: right;
+  width: 650px;
+  padding: 20px;
+  background: salmon;
+}
+
+.content p {
+  margin: 10px;
+  padding: 5px;
+}
+
+h2 {
+  margin: 5px;
+  padding: 5px;
+}
+
+ul {
+  margin: 10px;
+  padding: 5px;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+  padding: 5px;
+}
+
+.skills {
+  clear: both;
+  padding: 10px 20px;
+  background: violet;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.lang {
+  margin-right: 40px;
+}
+
+.lang p {
+  margin: 5px 0;
+  text-align: center;
+}
