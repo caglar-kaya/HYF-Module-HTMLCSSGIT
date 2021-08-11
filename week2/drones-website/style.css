@@ -142,4 +142,53 @@ p:hover {
   body {
     background: crimson;
   }
+
+  img {
+    width: 93%;
+  }
+
+  .grid-item {
+    background: lightgreen;
+    border: 1px solid black;
+    float: left;
+    width: 23%;
+    margin: 5px;
+    padding: 10px;
+    height: 700px;
+  }
+
+  li:first-child {
+    width: 47%;
+  }
+
+  li:first-child > img {
+    width: 96%;
+  }
+
+  li:first-child > p {
+    height: 100px;
+  }
+
+  h3 {
+    border: 1px solid black;
+    height: 70px;
+  }
+
+  p {
+    height: 200px;
+    overflow: auto;
+  }
+
+  .grid-floats::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
