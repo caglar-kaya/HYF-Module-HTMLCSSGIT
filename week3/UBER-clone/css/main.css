@@ -1,0 +1,314 @@
+.container-nav {
+  width: 90%;
+}
+
+.container {
+  width: 90%;
+}
+
+.section-lady {
+  background: url(../img/lady.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.section-lady .card {
+  margin-top: 9vh;
+  max-height: 75vh;
+  overflow: auto;
+}
+
+.section-lady .btn {
+  margin: 2vw 2vw 2vw auto;
+}
+.tabs .indicator {
+  background-color: black;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background: transparent;
+}
+
+.section-business {
+  background: url(../img/business.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.section-business h4 {
+  font-weight: 600;
+}
+
+.section-business h4,
+p,
+.btn {
+  margin-top: 5vh;
+}
+
+.section-safety h4 {
+  font-weight: 600;
+}
+
+.section-safety .card-title {
+  font-weight: 400;
+}
+
+.section-apps {
+  height: 430px;
+}
+
+.section-apps h4 {
+  margin: 7vh auto;
+  font-weight: 600;
+}
+
+.section-apps p {
+  font-weight: 600;
+}
+
+.section-apps i {
+  margin-left: 10vw;
+}
+
+.section-apps .col {
+  padding: 25px;
+}
+
+.section-sign-up {
+  height: 240px;
+}
+
+.section-sign-up p {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.section-sign-up i {
+  margin-left: 70px;
+}
+
+.section-sign-up .card {
+  margin: 5vh auto;
+  height: 25vh;
+}
+
+.section-footer .container {
+  margin-top: 10vh;
+}
+
+.container .uber {
+  font-size: 1.6rem;
+}
+
+.container .help {
+  font-size: 1.1rem;
+}
+
+.footer-list {
+  font-size: 1.3rem;
+}
+
+.section-footer ul li {
+  margin: 2vh auto;
+}
+
+.section-footer .fa-2x {
+  margin-right: 2vw;
+}
+
+.section-footer .responsive-img {
+  width: 8vw;
+  height: auto;
+}
+
+.footer-copyright .container {
+  margin: 10vh auto;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  #lady {
+    height: 100vh;
+  }
+
+  .section-business {
+    height: 50vh;
+  }
+
+  .section-apps {
+    height: 640px;
+  }
+
+  .section-sign-up {
+    height: 80vh;
+  }
+
+  .section-footer .products {
+    margin-bottom: 18vh;
+  }
+
+  .section-footer .dutch {
+    margin-top: 5vh;
+  }
+
+  .section-footer .south {
+    margin: 5vh auto;
+  }
+
+  .section-footer .responsive-img {
+    width: 30vw;
+    height: auto;
+    margin: 3vh auto;
+  }
+
+  .footer-copyright .container {
+    margin: 3vh auto;
+    height: 20vh;
+  }
+
+  .footer-copyright span {
+    margin: auto 14vw;
+  }
+
+  .footer-copyright a {
+    margin: 5vw;
+  }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .section-lady .card {
+    max-height: 100vh;
+    overflow: auto;
+  }
+
+  .section-sign-up {
+    height: 40vh;
+  }
+
+  .section-footer .container {
+    padding: 10vw;
+  }
+
+  .section-footer .products {
+    margin-bottom: 18vh;
+  }
+
+  .section-footer .dutch {
+    margin-top: 5vh;
+  }
+
+  .section-footer .south {
+    margin: 5vh auto;
+  }
+
+  .section-footer .responsive-img {
+    width: 30vw;
+    height: auto;
+    margin: 3vh auto;
+  }
+
+  .footer-copyright {
+    padding: 0px;
+    height: 20vh;
+  }
+
+  .footer-copyright .container {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer-copyright span {
+    margin-right: 10vw;
+  }
+
+  .footer-copyright a {
+    margin: 10px;
+  }
+}
+
+/* Desktop Devices */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .nav-bar {
+    padding: 0px;
+  }
+
+  .container-nav {
+    margin: 0px auto;
+    width: 100%;
+  }
+
+  .nav-bar {
+    height: 12vh;
+  }
+  .section-lady .card {
+    max-height: 100vh;
+    overflow: auto;
+    width: 45vw;
+  }
+
+  .section-sign-up {
+    height: 40vh;
+  }
+
+  .section-footer .fa-2x:last-of-type {
+    margin-right: 60px;
+  }
+
+  .footer-copyright {
+    padding: 0px;
+    height: 20vh;
+  }
+
+  .footer-copyright .container {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/* Large Desktop Devices */
+@media screen and (min-width: 1201px) {
+  .nav-bar {
+    height: 10vh;
+    padding: 0px;
+  }
+
+  .container-nav {
+    margin: 0px auto;
+  }
+
+  .section-lady .card {
+    max-height: 100vh;
+    overflow: auto;
+    width: 45vw;
+  }
+
+  .section-sign-up {
+    height: 40vh;
+  }
+
+  .section-footer .fa-2x:last-of-type {
+    margin-right: 60px;
+  }
+
+  .footer-copyright {
+    padding: 0px;
+    height: 30vh;
+  }
+
+  .footer-copyright .container {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
