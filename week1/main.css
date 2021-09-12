@@ -20,17 +20,13 @@ body {
   margin: 40px auto;
 }
 
-.resume {
-  border-bottom: 1px solid gray;
-}
-
-h1 {
+.resume h1 {
   text-align: center;
   padding: 10px 0px;
+  border-bottom: 1px solid gray;
 }
 
 .foto-name {
-  border-bottom: 1px solid gray;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -46,6 +42,71 @@ h1 {
   width: 190px;
   height: auto;
   margin: 20px;
+}
+
+.tech-skills {
+  display: grid;
+  height: 19vh;
+  grid-template-areas:
+    'skill1 skill2 skill3 skill4 skill5 skill6 skill7'
+    'skill8 skill8 skill9 skill10 skill10 skill11 skill11';
+  grid-template-columns: repeat(autofill, 1fr);
+  grid-template-rows: auto auto;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.skill {
+  background-color: whitesmoke;
+  border: 1px solid gray;
+  margin: 10px;
+  text-align: center;
+  align-content: center;
+}
+
+.skill-1 {
+  grid-area: skill1;
+}
+
+.skill-2 {
+  grid-area: skill2;
+}
+
+.skill-3 {
+  grid-area: skill3;
+}
+
+.skill-4 {
+  grid-area: skill4;
+}
+
+.skill-5 {
+  grid-area: skill5;
+}
+
+.skill-6 {
+  grid-area: skill6;
+}
+
+.skill-7 {
+  grid-area: skill7;
+}
+
+.skill-8 {
+  grid-area: skill8;
+}
+
+.skill-9 {
+  grid-area: skill9;
+}
+
+.skill-10 {
+  grid-area: skill10;
+}
+
+.skill-11 {
+  grid-area: skill11;
 }
 
 .contact {
