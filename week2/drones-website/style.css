@@ -195,6 +195,7 @@ p:hover {
     line-height: 1.3rem;
     max-height: 150px;
     overflow: auto;
+    width: 90%;
   }
 
   /* grid with floats */
@@ -205,12 +206,12 @@ p:hover {
     width: 30%;
     margin: 10px;
     padding: 10px;
-    height: 65vh;
+    min-height: 65vh;
   }
 
   .grid-floats .grid-item:nth-child(-n + 2) {
     width: 46%;
-    height: 80vh;
+    min-height: 80vh;
   }
 
   /* a small trick to delete float property */
@@ -233,12 +234,12 @@ p:hover {
     width: 30%;
     margin: 10px;
     padding: 10px;
-    height: 65vh;
+    min-height: 65vh;
   }
 
   .grid-flex .grid-item:nth-child(-n + 2) {
     width: 46%;
-    height: 80vh;
+    min-height: 80vh;
   }
 }
 
