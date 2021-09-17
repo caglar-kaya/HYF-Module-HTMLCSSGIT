@@ -246,7 +246,7 @@ p:hover {
 /* Desktop Styles */
 @media screen and (min-width: 1024px) {
   body {
-    background: crimson;
+    background: lightskyblue;
   }
 
   img {
