@@ -348,13 +348,14 @@ p:hover {
     height: 100px;
   }
 
+  /* a small trick to delete float property */
   .grid-floats::after {
     content: '';
     clear: both;
     display: table;
   }
 
-  /* grid with floats */
+  /* grid with flexbox */
   .grid-flex {
     display: flex;
     flex-wrap: wrap;
