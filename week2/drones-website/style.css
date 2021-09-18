@@ -57,6 +57,17 @@ p {
   padding: 5px;
 }
 
+p::first-letter {
+  font-size: 1.5rem;
+  color: red;
+  font-weight: bold;
+}
+
+p::selection {
+  background: yellow;
+  color: red;
+}
+
 h3:hover {
   color: white;
   transition: 0.4s ease;
@@ -113,21 +124,21 @@ p:hover {
 
   h1 {
     height: 13vh;
-    background: linear-gradient(to right, black, red);
+    background: linear-gradient(to right, red, white);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   h2 {
-    background: linear-gradient(to right, black, green);
+    background: linear-gradient(to right, white, blue);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   h3 {
-    color: darkgreen;
+    color: #4000cc;
   }
 
   img {
@@ -167,7 +178,7 @@ p:hover {
   h1 {
     font-size: 4rem;
     height: 15vh;
-    background: linear-gradient(to right, black, blue);
+    background: linear-gradient(to right, red, black);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -182,7 +193,7 @@ p:hover {
   }
 
   h3 {
-    color: blue;
+    color: #003366;
     height: 12vh;
   }
 
@@ -252,7 +263,7 @@ p:hover {
 /* Desktop Styles */
 @media screen and (min-width: 1024px) {
   body {
-    background: lightpink;
+    background: #cc99ff;
   }
 
   header {
@@ -262,7 +273,7 @@ p:hover {
   h1 {
     font-size: 4rem;
     height: 15vh;
-    background: linear-gradient(to right, darkblue, lightblue);
+    background: linear-gradient(to right, black, red);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -270,15 +281,15 @@ p:hover {
 
   h2 {
     font-size: 3rem;
-    background: linear-gradient(to right, black, red);
+    background: linear-gradient(to right, red, black);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   h3 {
-    color: orangered;
-    border: 1px solid orangered;
+    color: #990033;
+    border: 1px solid #990033;
     border-radius: 3px;
     height: 12vh;
   }
@@ -328,12 +339,12 @@ p:hover {
     width: 47%;
   }
 
-  .grid-floats .grid-item:first-child > img {
+  .grid-floats .grid-item:first-child img {
     width: 95%;
     height: 300px;
   }
 
-  .grid-floats .grid-item:first-child > p {
+  .grid-floats .grid-item:first-child p {
     height: 100px;
   }
 
@@ -351,7 +362,7 @@ p:hover {
   }
 
   .grid-flex .grid-item {
-    background: lightskyblue;
+    background: #99ffcc;
     border: 1px solid gray;
     width: 23%;
     margin: 10px;
