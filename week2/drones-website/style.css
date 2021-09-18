@@ -1,12 +1,14 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 @font-face {
   font-family: 'Poppins-regular';
   src: url(./fonts/Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 /* Base style for all layouts (mobile, tablet, and desktop). */
@@ -56,10 +58,10 @@ p {
 }
 
 h3:hover {
-  color: orangered;
+  color: white;
   transition: 0.4s ease;
   background: linear-gradient(to right, #0bcc4b, #a1d8ad);
-  border: 1px solid orangered;
+  border: 1px solid white;
   border-radius: 3px;
   cursor: pointer;
   transform: scale(1.05);
@@ -83,11 +85,15 @@ img:hover {
   filter: drop-shadow(5px 5px 5px orangered);
 }
 
+p {
+  font-family: 'Architects Daughter', cursive;
+}
+
 p:hover {
-  color: orangered;
+  color: white;
   transition: 0.4s ease;
   background: linear-gradient(to right, #0bcc4b, #a1d8ad);
-  border: 1px solid orangered;
+  border: 1px solid white;
   border-radius: 3px;
   cursor: pointer;
   transform: scale(1.05);
@@ -246,43 +252,89 @@ p:hover {
 /* Desktop Styles */
 @media screen and (min-width: 1024px) {
   body {
-    background: lightskyblue;
+    background: lightpink;
   }
 
-  img {
-    width: 93%;
+  header {
+    height: 15vh;
   }
 
-  .grid-item {
-    background: lightgreen;
-    border: 1px solid black;
-    float: left;
-    width: 23%;
-    margin: 5px;
-    padding: 10px;
-    height: 700px;
+  h1 {
+    font-size: 4rem;
+    height: 15vh;
+    background: linear-gradient(to right, darkblue, lightblue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  li:first-child {
-    width: 47%;
-  }
-
-  li:first-child > img {
-    width: 96%;
-  }
-
-  li:first-child > p {
-    height: 100px;
+  h2 {
+    font-size: 3rem;
+    background: linear-gradient(to right, black, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   h3 {
-    border: 1px solid black;
-    height: 70px;
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 3px;
+    height: 12vh;
+  }
+
+  h3:hover {
+    transform: scale(1);
+  }
+
+  img {
+    width: 95%;
+  }
+
+  img:hover {
+    transform: scale(1);
   }
 
   p {
-    height: 200px;
+    font-size: 1.2rem;
+    color: black;
+    background: lightsalmon;
+    margin: 10px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 10px;
+    line-height: 1.3rem;
+    max-height: 175px;
     overflow: auto;
+    width: 95%;
+  }
+
+  p:hover {
+    transform: scale(1);
+  }
+
+  /* grid with floats */
+  .grid-floats .grid-item {
+    background: lightyellow;
+    border: 1px solid gray;
+    float: left;
+    width: 23%;
+    margin: 10px;
+    padding: 10px;
+    height: 80vh;
+  }
+
+  .grid-floats .grid-item:first-child {
+    width: 47%;
+  }
+
+  .grid-floats .grid-item:first-child > img {
+    width: 95%;
+    height: 300px;
+  }
+
+  .grid-floats .grid-item:first-child > p {
+    height: 100px;
   }
 
   .grid-floats::after {
@@ -291,10 +343,32 @@ p:hover {
     display: table;
   }
 
+  /* grid with floats */
   .grid-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
+  }
+
+  .grid-flex .grid-item {
+    background: lightskyblue;
+    border: 1px solid gray;
+    width: 23%;
+    margin: 10px;
+    padding: 10px;
+    height: 80vh;
+  }
+
+  .grid-flex .grid-item:first-child {
+    width: 47%;
+  }
+
+  .grid-flex .grid-item:first-child img {
+    width: 95%;
+    height: 300px;
+  }
+
+  .grid-flex .grid-item:first-child p {
+    height: 100px;
   }
 }
