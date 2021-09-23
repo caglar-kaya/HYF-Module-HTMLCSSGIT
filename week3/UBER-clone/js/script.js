@@ -11,15 +11,8 @@ M.Autocomplete.init(ac, {
   });
 
   $(document).ready(function () {
-    $(".sidenav").sidenav();
-    $(".materialboxed").materialbox();
-    $(".parallax").parallax();
-    $(".tabs").tabs();
-    $(".datepicker").datepicker({
-      disableWeekends: true,
-      yearRange: 10,
-    });
-    $(".tooltipped").tooltip();
-    $(".scrollspy").scrollSpy();
-    $(".dropdown-trigger").dropdown();
+    $('.sidenav').sidenav();
+    $('.tabs').tabs();
+    $('.scrollspy').scrollSpy();
+    $('.dropdown-trigger').dropdown();
   });
