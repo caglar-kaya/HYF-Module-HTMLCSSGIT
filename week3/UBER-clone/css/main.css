@@ -191,20 +191,35 @@ p,
 /* Tablet Devices */
 @media screen and (min-width: 601px) and (max-width: 992px) {
   .section-lady .card {
-    max-height: 100vh;
+    width: 60vw;
+    max-height: 40vh;
     overflow: auto;
   }
 
+  .section-lady .card-content h1 {
+    font-size: 3rem;
+  }
+
+  .section-business h4 {
+    font-size: 2.7rem;
+  }
+
+  .section-business p {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
   .section-sign-up {
-    height: 40vh;
+    height: 35vh;
   }
 
   .section-footer .container {
-    padding: 10vw;
+    padding: 5vw;
+    margin: 0px auto;
   }
 
   .section-footer .products {
-    margin-bottom: 18vh;
+    margin-bottom: 12vh;
   }
 
   .section-footer .dutch {
@@ -220,34 +235,39 @@ p,
     height: auto;
     margin: 3vh auto;
   }
-  /*
-  .footer-copyright {
-    padding: 0px;
-    height: 20vh;
-  }
 
   .footer-copyright .container {
-    margin: 0px;
-    width: 100%;
+    height: 10vh;
+  }
+
+  .footer-copyright .row {
     display: flex;
-    justify-content: flex-start;
   }
 
-  .footer-copyright span {
-    margin-right: 10vw;
+  .footer-copyright .footer-links {
+    display: flex;
+    justify-content: space-around;
   }
-
-  .footer-copyright a {
-    margin: 10px;
-  }
-  */
 }
 
 /* Desktop Devices */
 @media screen and (min-width: 993px) and (max-width: 1200px) {
   .section-lady .card {
-    max-height: 100vh;
+    height: 60vh;
     overflow: auto;
+  }
+
+  .section-lady .card-content h1 {
+    font-size: 3rem;
+  }
+
+  .section-business h4 {
+    font-size: 2.6rem;
+  }
+
+  .section-business p {
+    font-size: 1.4rem;
+    font-weight: 400;
   }
 
   .section-sign-up {
@@ -255,38 +275,32 @@ p,
   }
 
   .section-footer .fa-2x:last-of-type {
-    margin-right: 60px;
-  }
-  /*
-  .footer-copyright {
-    padding: 0px;
-    height: 20vh;
+    margin-right: 10px;
   }
 
   .footer-copyright .container {
     margin: 0px;
-    width: 100%;
+  }
+
+  .footer-copyright .footer-links {
     display: flex;
     justify-content: space-around;
-    align-items: center;
   }
-  */
 }
 
 /* Large Desktop Devices */
 @media screen and (min-width: 1201px) {
-  .nav-bar {
-    height: 10vh;
-    padding: 0px;
-  }
-
-  .container-nav {
-    margin: 0px auto;
-  }
-
   .section-lady .card {
     max-height: 100vh;
-    overflow: auto;
+  }
+
+  .section-lady .card-content h1 {
+    font-size: 3rem;
+  }
+
+  .section-business p {
+    font-size: 1.6rem;
+    font-weight: 300;
   }
 
   .section-sign-up {
@@ -306,13 +320,16 @@ p,
     margin-right: 20px;
   }
 
-  /*
+  .section-footer .fa-2x:last-of-type {
+    margin-right: 20px;
+  }
+
   .footer-copyright .container {
     margin: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
   }
-  */
+
+  .footer-copyright .footer-links {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
