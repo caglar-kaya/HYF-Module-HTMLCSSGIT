@@ -134,25 +134,27 @@ p,
 /* Mobile Devices */
 @media screen and (max-width: 600px) {
   .section-lady {
-    height: 100vh;
+    height: 50vh;
   }
   .section-lady .card {
-    height: 80vh;
+    height: 35vh;
+    margin-top: 5vh;
   }
+
   .section-lady .card h1 {
     font-size: 2rem;
   }
 
   .section-business {
-    height: 50vh;
+    height: 40vh;
   }
 
   .section-apps {
-    height: 105vh;
+    height: 90vh;
   }
 
   .section-sign-up {
-    height: 75vh;
+    height: 70vh;
   }
 
   .section-footer .products {
@@ -191,13 +193,16 @@ p,
 /* Tablet Devices */
 @media screen and (min-width: 601px) and (max-width: 992px) {
   .section-lady .card {
-    width: 60vw;
-    max-height: 40vh;
+    height: 60vh;
     overflow: auto;
   }
 
   .section-lady .card-content h1 {
     font-size: 3rem;
+  }
+
+  .section-business {
+    height: 40vh;
   }
 
   .section-business h4 {
@@ -261,6 +266,10 @@ p,
     font-size: 3rem;
   }
 
+  .section-business {
+    height: 40vh;
+  }
+
   .section-business h4 {
     font-size: 2.6rem;
   }
@@ -271,7 +280,7 @@ p,
   }
 
   .section-sign-up {
-    height: 40vh;
+    height: 35vh;
   }
 
   .section-footer .fa-2x:last-of-type {
@@ -291,11 +300,16 @@ p,
 /* Large Desktop Devices */
 @media screen and (min-width: 1201px) {
   .section-lady .card {
-    max-height: 100vh;
+    margin-top: 5vh;
+    height: 60vh;
   }
 
   .section-lady .card-content h1 {
     font-size: 3rem;
+  }
+
+  .section-business {
+    height: 40vh;
   }
 
   .section-business p {
